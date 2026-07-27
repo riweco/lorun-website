@@ -266,6 +266,52 @@ h1 {
 .service-card h3 { margin: 56px 0 14px; font-size: 1.38rem; letter-spacing: -.03em; }
 .service-card p { margin: 0; color: var(--muted); }
 
+.partners-section {
+  padding-top: 12px;
+}
+
+.partners-header {
+  align-items: center;
+}
+
+.partners-header > div {
+  max-width: 650px;
+}
+
+.partners-header .eyebrow {
+  margin-bottom: 14px;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.partner-card {
+  display: grid;
+  place-items: center;
+  min-height: 170px;
+  padding: 30px 26px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,.76);
+  box-shadow: 0 14px 38px rgba(31, 42, 48, .055);
+}
+
+.partner-logo {
+  width: 100%;
+  height: 92px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.partner-logo-riweco { height: 62px; }
+.partner-logo-kazi { height: 108px; }
+.partner-logo-sebau { height: 70px; }
+.partner-logo-feniq { height: 88px; }
+
 .career-teaser {
   display: grid;
   grid-template-columns: 1.15fr .85fr;
@@ -474,7 +520,7 @@ h1 {
   .notice-panel { max-width: 680px; }
   .career-teaser .btn { justify-self: start; }
   .job-sidebar { position: static; grid-template-columns: 1fr 1fr; }
-  .cards-3, .jobs-grid { grid-template-columns: 1fr 1fr; }
+  .cards-3, .jobs-grid, .partners-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 720px) {
@@ -491,6 +537,7 @@ h1 {
   .section-header { display: block; }
   .section-header p { margin-top: 16px; }
   .cards-3, .jobs-grid, .job-sidebar { grid-template-columns: 1fr; }
+  .partner-card { min-height: 148px; }
   .career-teaser { padding: 30px; }
   .page-hero { padding-top: 58px; }
   .job-meta { grid-template-columns: 1fr; }
@@ -504,6 +551,8 @@ h1 {
   .site-logo { width: 108px; }
   .main-nav a:nth-child(3) { display: none; }
   .notice-panel, .contact-panel, .job-apply-card, .service-card, .job-card { padding: 24px; }
+  .partners-grid { grid-template-columns: 1fr; }
+  .partner-card { min-height: 132px; padding: 24px; }
   .hero-actions { display: grid; }
   .btn { width: 100%; }
 }

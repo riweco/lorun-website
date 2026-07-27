@@ -15,3 +15,6 @@ Logo jest osadzone jako zwykły element `<img>` i nie prowadzi do żadnego adres
 ## Publikacja na GitHub Pages
 
 Wgraj całą zawartość katalogu do głównego katalogu repozytorium. GitHub Pages powinien publikować gałąź `main` z katalogu `/ (root)`.
+
+## Aktualizacja: sieć współpracy
+Na stronie głównej dodano sekcję z logotypami RIWECO GmbH, KAZI Aussenanlagen, Sephastian-Bau i FENIQ. Pliki znajdują się w `assets/partners/`.
